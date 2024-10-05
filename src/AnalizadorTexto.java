@@ -11,7 +11,8 @@ public class AnalizadorTexto {
         int totalPalabras = 0;
         int totalVocales = 0;
 
-        for (int i = 0; i < texto.length(); i++) {
+        int n =texto.length;
+        for (int i = 0; i < n; i++) {
             char c = texto.charAt(i);
             if (c >= 'a' && c <= 'z') {
                 frecuencia[c - 'a']++;
